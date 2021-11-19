@@ -1,0 +1,32 @@
+/*a little bit of stile*/
+
+body {
+    height: 100vh;
+    display: grid;
+}
+
+.desk {
+    width: 600px;
+    height: 350px;
+    background-image: linear-gradient(45deg, green, white, red);
+    margin-bottom: 40px;
+    border-radius: 100%;
+}
+
+button {
+    background-color: red;
+    color: black;
+    border-radius: 100%;
+    padding: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

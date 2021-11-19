@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.9/vue.common.dev.js' integrity='sha512-GspmY4GVC6/FfawZMQ8qoi3NF1ZlpODiI4pzXCg9cPZVXewg9SawPoFylPfb34NLwd3gZH4EnckB0TL3EJDBaQ==' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="app">
+        <div class="desk">
+            <div v-if="listMails" class="container">
+                <ul class="list">
+                    <li v-for="(address, i) in mailList">{{ mailList[i] }}</li>
+                </ul>
+            </div>
+        </div>
+        <button @click="genTenMails">Random mails</button>
+    </div>
+
+
+    <!-- script -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
